@@ -56,6 +56,11 @@ print(target)
 #=========================================Train/Test set split=========================================
 X_trainset, X_testset, y_trainset, y_testset = train_test_split(X, y, test_size=0.3, random_state=3)
 
+#===============================Print the shape of the train and the test set=================
+Xshape = X_trainset.shape
+print(Xshape)
 
+yshape = y_trainset.shape
+print(yshape)
 
 
