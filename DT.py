@@ -68,3 +68,17 @@ print(Xtestshape)
 
 y_testshape = y_testset.shape
 print(y_testshape)
+
+
+
+#===========================================MODELLING======================================
+
+#================================Fitting the dataset to the drugtree classifier================================
+drugTree = DecisionTreeClassifier(criterion="entropy", max_depth = 4)
+drugTree # it shows the default parameters
+drugTree.fit(X_trainset,y_trainset)
+
+
+
+
+
