@@ -2,6 +2,7 @@
 import numpy as np 
 import pandas as pd
 from sklearn import preprocessing
+from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
 #=========================Importing the dataframe and reading it into the project=========================
@@ -50,4 +51,11 @@ print(target)
 
 
 
-#==================================SETTING UP THE DECISION TREE====================================
+#======================================SETTING UP THE DECISION TREE====================================
+
+#=========================================Train/Test set split=========================================
+X_trainset, X_testset, y_trainset, y_testset = train_test_split(X, y, test_size=0.3, random_state=3)
+
+
+
+
