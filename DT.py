@@ -14,6 +14,8 @@ print(df)
 dsize = df.shape
 print(dsize)
 
+
+
 #======================================DATA PRE-PROCESSING========================================
 
 #====================================Viewing the data===========================
@@ -40,4 +42,12 @@ X[0:5]
 preprocessed = X[0:5]
 print(preprocessed)
 
+#==================================Adding the target variables======================================
+y = my_data["Drug"]
+y[0:5]
+target = y[0:5]
+print(target)
 
+
+
+#==================================SETTING UP THE DECISION TREE====================================
