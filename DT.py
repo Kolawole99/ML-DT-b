@@ -4,6 +4,13 @@ import pandas as pd
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
+from sklearn import metrics
+import matplotlib.pyplot as plt
+from sklearn.externals.six import StringIO
+import pydotplus
+import matplotlib.image as mpimg
+from sklearn import tree
+#%matplotlib inline 
 
 #=========================Importing the dataframe and reading it into the project=========================
 my_data = pd.read_csv("./drug200.csv", delimiter=",")
@@ -84,5 +91,11 @@ drugTree.fit(X_trainset,y_trainset)
 predTree = drugTree.predict(X_testset)
 print (predTree [0:5])
 print (y_testset [0:5])
+
+
+
+#==========================================EVALUATION==========================================
+print("DecisionTrees's Accuracy: ", metrics.accuracy_score(y_testset, predTree))
+
 
 
