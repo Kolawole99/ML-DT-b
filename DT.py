@@ -80,5 +80,9 @@ drugTree.fit(X_trainset,y_trainset)
 
 
 
+#===========================================PREDICTION==============================================
+predTree = drugTree.predict(X_testset)
+print (predTree [0:5])
+print (y_testset [0:5])
 
 
