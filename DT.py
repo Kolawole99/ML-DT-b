@@ -63,4 +63,8 @@ print(Xshape)
 yshape = y_trainset.shape
 print(yshape)
 
+Xtestshape = X_testset.shape
+print(Xtestshape)
 
+y_testshape = y_testset.shape
+print(y_testshape)
