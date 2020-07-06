@@ -6,11 +6,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import metrics
 import matplotlib.pyplot as plt
-from sklearn.externals.six import StringIO
+#from sklearn.externals.six import StringIO #for jupyter notes
+import StringIO
 import pydotplus
 import matplotlib.image as mpimg
 from sklearn import tree
-#%matplotlib inline 
+#%matplotlib inline #for jupyter notes
 
 #=========================Importing the dataframe and reading it into the project=========================
 my_data = pd.read_csv("./drug200.csv", delimiter=",")
